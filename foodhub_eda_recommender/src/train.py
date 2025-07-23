@@ -7,8 +7,8 @@ import os
 
 # Load dataset
 df = pd.read_csv('data/tickets.csv')
-X = df['restaurant_name']
-y = df['cuisine_type']
+X = df['text']
+y = df['label']
 
 # Vectorization
 vectorizer = TfidfVectorizer(stop_words='english')
